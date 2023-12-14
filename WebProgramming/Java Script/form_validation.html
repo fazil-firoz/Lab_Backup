@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> Form </title>
+<style>
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:15%;
+ 
+}
+
+.button1 {
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button2 {
+  background-color: #008CBA;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body bgcolor="powderblue">
+<center>
+<h1> Registration Form </h1>
+<form name="form" action=""  onsubmit="return validateForm()">
+	<div class="">
+	  <label for="fname">Name :</label>
+	  <input type="text" name="fname" placeholder="Enter your Name" id="name" ><br><br>
+	</div>
+	 <div class="">
+	  <label for="number">Mob-:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <input type="text" name="mob" placeholder="+91" id="mob"><br><br>
+	  <h1 id="demo"></h1>
+	 </div>
+	 <div class="">
+	  <label for="password">Password : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <input type="password" name="password" placeholder="Enter your password" id="pass"><br><br>
+	 </div>
+	 <br><br>
+	 <div class="">
+		<button type="submit" class="button1">Submit</button>
+		
+		<button class="button2">Reset</button>
+	 </div>
+</form>
+</center>
+<script>
+      function validateForm() {
+            var fname = document.getElementById("name").value
+            var mob = document.getElementById("mob").value
+            var password = document.getElementById("pass").value
+
+            if (fname == "") {
+                alert("Enter Your Name ");
+                return false;
+            }
+            else if(!(isNaN(fname))){
+                alert("Enter Valid Name ");
+                return false;
+            }
+
+            if (mob == "") {
+                alert("Enter Mobile number");
+                return false;
+            }
+            else if (isNaN(mob)) {
+                alert("Enter valid Mobile number");
+                return false;
+            }
+            else if (mob.length != 10) {
+                alert("Enter Mobile number with 10 digit");
+                return false;
+            }
+
+            if (password == "")
+            {
+            		alert ("Enter The Password");
+            		return false;
+            }
+
+            else if (password.length != 10)
+            {
+            		alert ("Enter a valid password");
+            		return false;
+            }
+
+            
+    }
+</script>
+
+</body>
+</html>
+

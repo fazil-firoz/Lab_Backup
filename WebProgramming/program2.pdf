@@ -1,0 +1,75 @@
+Link 2.Html
+----------------
+
+<html>
+<head>
+<title> Linways Question 2 </title>
+</head>
+<body>
+
+<center>
+<h1> <a href="image.html"> Click Cheyyuuu !</a> </h1> <br>
+
+</center>
+</body>
+</html>
+
+
+Image.html
+---------------------
+
+
+<html>
+<head>
+<title> image </title>
+</head>
+<body>
+	<center>
+	<h1> Are you starving..?? </h1>
+    <img src="chilly.jpg"width="50%" height="700px"> </img> <br> <hr>
+    <img src="burger.jpg"width="50%" height="700px"> </img> <br> <hr>
+    <a name="ice">
+	<img src="ice.jpg"width="50%" height="700px"> </img> <br> <hr>
+	</a>
+	<img src="fish.jpg"width="50%" height="700px" > </img> <br> <hr>
+    <img src="burg.jpg"width="50%" height="700px"> </img> <br> <hr>
+    <img src="burg2.jpg"width="50%" height="700px"> </img> <br> <hr>
+	
+
+	<table border="1" cellpadding="10">
+  <tr>
+    <th>Dish Name</th>
+    <th>continent</th>
+    <th>price</th>
+  </tr>
+  <tr>
+    <td>Veg Burger</td>
+    <td>Europe</td>
+    <td>250D</td>
+  </tr>
+  <tr>
+    <td>Corn Ice</td>
+    <td>Asia</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Soyabeen Pasta</td>
+    <td>Asia</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>Chicken Burger</td>
+    <td>Erope</td>
+    <td>560</td>
+  </tr>
+  <tr>
+    <td>Kuzhi mandhi</td>
+    <td>Middle East</td>
+    <td>250</td>
+  </tr>
+  </center>
+</table>
+<h1> <a href="#"> Go Up !</a> </h1>
+<h1> <a href="#ice"> Go to ice !</a> </h1>
+</body>
+</html>
